@@ -1,5 +1,3 @@
-# Excel-Formula
-
 ## Result Sheet
 
 ### Calculation Condition:
@@ -40,11 +38,11 @@
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |  | Student ID | Student Name | Mathematics |  | ICT |  | Bangla |  | Total Marks | GPA | Letter Grade | Position | Comment (Pass/ Fail/ Absent) |
 | 1 |  |  | Marks | Grade Point | Marks | Grade Point | Marks | Grade Point |  |  |  |  |  |
-| 2 | S10001 | A | 55 | 2 | 65 | 3 | 43 | 0 | 163 | 1.67 | F | 4 | Fail |
-| 3 | S10002 | B | 45 | 0 | 70 | 4 | 81 | 5 | 196 | 3.00 | B | 2 | Pass |
-| 4 | S10003 | C | 60 | 3 | 60 | 3 | 60 | 3 | 180 | 3.00 | B | 2 | Pass |
-| 5 | S10004 | D | Abs | Absent | 63 | 3 | 53 | 2 | Absent | Absent | Absent | - | Absent |
-| 6 | S10005 | E | 99 | 5 | 75 | 4 | 75 | 4 | 249 | 4.33 | A | 1 | Pass |
+| 2 | S10001 | A | 55 |  | 65 |  | 43 |  |  |  |  |  |  |
+| 3 | S10002 | B | 45 |  | 70 |  | 81 |  |  |  |  |  |  |
+| 4 | S10003 | C | 60 |  | 60 |  | 60 |  |  |  |  |  |  |
+| 5 | S10004 | D | Abs |  | 63 |  | 53 |  |  |  |  |  |  |
+| 6 | S10005 | E | 99 |  | 75 |  | 75 |  |  |  |  |  |  |
 
 ### Formula:
 
@@ -96,4 +94,82 @@
 
 ```
 =VLOOKUP(C13,$C$4:$K$8,9,0)
+```
+
+## Electricity  Bill
+
+### Calculation Condition:
+
+1. **Cust_ID:** Apply validation for unique ID for each customer. ID should be 6-digit numeric value.
+2. **Cust. Name:** Name should be filled automatically according to Cust_ID.
+3. **Meter Reading date:** Apply cell format for showing the date as per sample and must be valid for within the date of July 1, 2023 to June 30, 2024.
+4. **Consumed Unit:** Use appropriate formula
+5. **Electricity Charge:**
+Use appropriate formula for calculating electricity charge. The range of consumption and rate per units see in the table.
+    
+    
+    | Range of Consumption | Rate per unit |
+    | --- | --- |
+    | 0-75 units | Tk 4.19 |
+    | 76-200 units | Tk 5.72 |
+    | 201-400 units
+    401-500 units | Tk 6.34
+    Tk 9.94 |
+    | Above 500 units | Tk 11.46 |
+6. **Service Charge:** Use the formula to place Tk 500 automatically for the customer who minimum use 1 unit
+of electricity.
+7. **Bill Amount:** Bill Amount must be calculated by the summation of electricity charge and Service Charge.
+8. **Rank:** Use formula to generate ranking value based on "Bill Amount"
+
+### Sample Table:
+
+|  | A | B | C | D | E | F | G | H | I | J |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Cust_ID | Cust. Name | Meter Reading Date | Prev. Unit | Curr. Unit | Consumed Unit | Electricity Charge | Service Charge | Bill Amount | Rank |
+| 2 | 101001 | B | December 15, 2023 | 6582 | 6781 |  |  |  |  |  |
+| 3 | 101002 | B | December 16, 2023 | 6582 | 6781 |  |  |  |  |  |
+| 4 | 101003 | C | December 17, 2023 | 7810 | 7908 |  |  |  |  |  |
+| 5 | 101004 | D | December 18, 2023 | 21105 | 21935 |  |  |  |  |  |
+| 6 | 101005 | E | December 19, 2023 | 3511 | 3961 |  |  |  |  |  |
+| 7 | 101006 | F | December 20, 2023 | 45214 | 49054 |  |  |  |  |  |
+
+### Formula:
+
+1. Co**nsumed Unit:**
+    
+    ```
+    =E4-D4
+    ```
+    
+2. **Electricity Charge**
+    
+    ```
+    =IF(F4<=75,F4*4.19,IF(F4<=200,F4*5.72,IF(F4<=400,F4*6.34,IF(F4<=500,F4*9.94,IF(F4>500,F4*11.46)))))
+    ```
+    
+3. S**ervice Charge**
+    
+    ```
+    =IF(F4>0,500)
+    ```
+    
+4. **Rank**
+    
+    ```
+    =RANK(I4,$I$4:$I$9,0)
+    ```
+    
+
+### VLOOKUP Sample Table
+
+|  | A | B |
+| --- | --- | --- |
+| 12 | VLOOKUP |  |
+| 13 | Cust_ID | Bill Amount |
+| 14 | 101006 | 44506.4 |
+
+**VLookup formula:**
+
+```
+=VLOOKUP(A14,$A$4:$I$9,9,0)
 ```
