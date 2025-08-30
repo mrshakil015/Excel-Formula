@@ -1,14 +1,10 @@
 ## Context
+- [Result Sheet](#result-sheet)
+- [Electricity Bill](#electricity--bill)
+- [Monthly Budget Tracker](#monthly-budget-tracker)
+- [Monthly Salary Sheet](#monthly-salary-sheet)
 
-[✅Result Sheet](https://www.notion.so/Result-Sheet-25e80fbdd36d80bd9191dde834a23385?pvs=21) 
-
-[💡Electricity  Bill](https://www.notion.so/Electricity-Bill-25e80fbdd36d804287eee6595f39fc65?pvs=21) 
-
-[💰Monthly Budget Tracker](https://www.notion.so/Monthly-Budget-Tracker-25e80fbdd36d806b9734f66a25a4746b?pvs=21) 
-
-[💵Monthly Salary Sheet](https://www.notion.so/Monthly-Salary-Sheet-25f80fbdd36d80bb8410f0edeb11a242?pvs=21) 
-
-## ✅Result Sheet
+## Result Sheet
 
 ---
 
@@ -103,7 +99,7 @@
     ![image.png](attachment:5969ba81-c553-4f46-beac-26e972cdc53c:image.png)
     
 
-## 💡Electricity  Bill
+## Electricity  Bill
 
 ---
 
@@ -190,7 +186,7 @@ Use appropriate formula for calculating electricity charge. The range of consump
 =VLOOKUP(A14,$A$4:$I$9,9,0)
 ```
 
-## 💰Monthly Budget Tracker
+## Monthly Budget Tracker
 
 ---
 
@@ -300,7 +296,7 @@ Budget” as per below conditions on Type and Amount:
 dropdown list on the category to show total expenses (As per Sample). The Total Amount
 column should show total of the same category. (Use Helper Table as necessary)
 
-## 💵Monthly Salary Sheet
+## Monthly Salary Sheet
 
 ### Sample Table
 
@@ -399,7 +395,7 @@ column should show total of the same category. (Use Helper Table as necessary)
     ![image.png](attachment:f58cc7bb-52c4-4e33-afb5-eaeaa69a43f4:image.png)
     
 
-## 👷‍♂️Weekly Wages Sheet
+## Weekly Wages Sheet
 
 Sample Table:
 
