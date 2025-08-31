@@ -457,8 +457,8 @@ Sample Table:
     ```
 
 ## Others
-- https://docs.google.com/spreadsheets/d/1B9I8s57DkzVTJERNnJF-trP-yoxz857X/edit?usp=sharing&ouid=116277591153016490720&rtpof=true&sd=true
+- All Job Sheets: https://docs.google.com/spreadsheets/d/1B9I8s57DkzVTJERNnJF-trP-yoxz857X/edit?usp=sharing&ouid=116277591153016490720&rtpof=true&sd=true
 
-- https://docs.google.com/spreadsheets/d/1psk9Zz08Mnen-yklicG-HEbrTjvH8DHB/edit?usp=sharing&ouid=116277591153016490720&rtpof=true&sd=true
+- My Excel Job Sheet: https://docs.google.com/spreadsheets/d/1psk9Zz08Mnen-yklicG-HEbrTjvH8DHB/edit?usp=sharing&ouid=116277591153016490720&rtpof=true&sd=true
 
-- https://docs.google.com/spreadsheets/d/1IZRO9PWkqPAWaFe0XAbVox_b5VYdDL9O/edit?usp=sharing&ouid=116277591153016490720&rtpof=true&sd=true
+- ODI Series: https://docs.google.com/spreadsheets/d/1IZRO9PWkqPAWaFe0XAbVox_b5VYdDL9O/edit?usp=sharing&ouid=116277591153016490720&rtpof=true&sd=true
